@@ -16,7 +16,24 @@ const Header = () => {
                         <nav className="menu">
                             <ul className="d-flex">
                                 <li className="mr-lg-5"><a href="">ínicio</a></li>
-                                <li className="mr-lg-5"><a href="">Terapias</a></li>
+                                <li className="mr-lg-5">
+                                    <a href="">Terapias</a>
+
+                                    <ul className="submenu">
+                                        <li>
+                                            <a href="">
+                                                Terapia Cognitiva Comportamental
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="">
+                                                Terapia dos
+                                                Esquemas
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
                                 <li className="mr-lg-5"><a href="">Formação</a></li>
                                 <li className="mr-lg-5"><a href="">Blog</a></li>
                                 <li><a href="">Contato</a></li>

@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$padrao".
-        on line 10 of src/styles/scss/Header.scss
+        on line 33 of src/styles/scss/Header.scss
 
-5: .menu{
-6:     ul{
-7:         list-style: none;
-8: 
-9:         a{
-10:             color: $padrao;
-11:             font-size: 18px;
-12:             font-weight: bold;
-13:             text-transform: uppercase;
-14:         }
-15:     }
+28:                 display: block;
+29:             }
+30:         }
+31: 
+32:         a{
+33:             color: $padrao;
+34:             font-size: 18px;
+35:             font-weight: bold;
+36:             text-transform: uppercase;
+37: 
+38:             &:hover{
 
 Backtrace:
-src/styles/scss/Header.scss:10
+src/styles/scss/Header.scss:33
 C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
@@ -91,4 +91,4 @@ C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$padrao\".\A         on line 10 of src/styles/scss/Header.scss\A \A 5: .menu{\A 6:     ul{\A 7:         list-style: none;\A 8: \A 9:         a{\A 10:             color: $padrao;\A 11:             font-size: 18px;\A 12:             font-weight: bold;\A 13:             text-transform: uppercase;\A 14:         }\A 15:     }"; }
+  content: "Error: Undefined variable: \"$padrao\".\A         on line 33 of src/styles/scss/Header.scss\A \A 28:                 display: block;\A 29:             }\A 30:         }\A 31: \A 32:         a{\A 33:             color: $padrao;\A 34:             font-size: 18px;\A 35:             font-weight: bold;\A 36:             text-transform: uppercase;\A 37: \A 38:             &:hover{"; }

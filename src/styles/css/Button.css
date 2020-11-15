@@ -6,6 +6,11 @@
   padding: 20px 40px;
   text-transform: uppercase;
   -webkit-box-shadow: 5px 5px 13px -6px #3a3a3a;
-  box-shadow: 5px 5px 13px -6px #3a3a3a; }
+  box-shadow: 5px 5px 13px -6px #3a3a3a;
+  transition: .8s ease-in-out; }
+  .button01:hover {
+    text-decoration: none;
+    background-color: #657c36;
+    color: #fff; }
 
 /*# sourceMappingURL=Button.css.map */

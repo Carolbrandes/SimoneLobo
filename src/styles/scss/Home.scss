@@ -77,6 +77,10 @@
         background-image: url(../../assets/slider-fotos-consultorio02.jpg);
 }
 
+.carousel-item{
+        z-index: -1 !important;
+}
+
 .carousel-prev {
         width: 80px !important;
         height: 80px !important;

@@ -16,18 +16,62 @@ header {
 
 .menu ul {
   list-style: none; }
+  .menu ul li::after {
+    content: "";
+    display: block;
+    background-color: #99c73c;
+    width: 0;
+    height: 3px;
+    margin: 2px auto;
+    transition: .5s;
+    position: relative; }
+  .menu ul li:hover::after {
+    width: 100%; }
+  .menu ul li:hover .submenu {
+    display: block; }
   .menu ul a {
     color: #3d3d3d;
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase; }
+    .menu ul a:hover {
+      text-decoration: none; }
+.menu .submenu {
+  display: none;
+  background-color: #333;
+  position: absolute;
+  top: 35px;
+  padding: 0; }
+  .menu .submenu li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.445);
+    padding: 20px 40px;
+    position: relative; }
+    .menu .submenu li::after {
+      content: "";
+      display: inline-block;
+      background-color: #99c73c;
+      width: 5px !important;
+      height: 0;
+      transition: .5s;
+      position: absolute;
+      left: 0;
+      top: 0; }
+    .menu .submenu li:hover::after {
+      height: 65px; }
+  .menu .submenu a {
+    color: #fff;
+    font-weight: normal; }
 
 .whatsApp-link {
   position: fixed;
   bottom: 45%;
   right: 5px;
   width: 70px;
-  z-index: 5; }
+  z-index: 5;
+  transition: 1s ease-in-out; }
+  .whatsApp-link:hover {
+    transform: scale(1.2);
+    right: 20px; }
 
 .home__bg01 {
   background-image: url(../../../src/assets/banner-home.png);
@@ -85,6 +129,9 @@ header {
 #img02-consultorio {
   background-image: url(../../assets/slider-fotos-consultorio02.jpg); }
 
+.carousel-item {
+  z-index: -1 !important; }
+
 .carousel-prev {
   width: 80px !important;
   height: 80px !important;
@@ -141,6 +188,11 @@ footer {
   padding: 20px 40px;
   text-transform: uppercase;
   -webkit-box-shadow: 5px 5px 13px -6px #3a3a3a;
-  box-shadow: 5px 5px 13px -6px #3a3a3a; }
+  box-shadow: 5px 5px 13px -6px #3a3a3a;
+  transition: .8s ease-in-out; }
+  .button01:hover {
+    text-decoration: none;
+    background-color: #657c36;
+    color: #fff; }
 
 /*# sourceMappingURL=index.css.map */

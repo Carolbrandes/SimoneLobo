@@ -6,11 +6,76 @@ header{
     ul{
         list-style: none;
 
+        li{
+            &::after{
+                content: "";
+                display: block;
+                background-color: #99c73c;
+                width: 0;
+                height: 3px;
+                margin: 2px auto;
+                transition: .5s;
+                position: relative;
+            }
+
+            &:hover{
+                &::after{
+                    width: 100%;
+                }
+            }
+
+            &:hover .submenu{
+                display: block;
+            }
+        }
+
         a{
             color: $padrao;
             font-size: 18px;
             font-weight: bold;
             text-transform: uppercase;
+
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+
+    .submenu{
+        display: none;
+        background-color: #333;
+        position: absolute;
+        top: 35px;
+        padding: 0;
+
+        li{
+            border-bottom: 1px solid rgba(255, 255, 255, 0.445);
+            padding: 20px 40px;
+            position: relative;
+           
+
+            &::after{
+                content: "";
+                display: inline-block;
+                background-color: #99c73c;
+                width: 5px !important;
+                height: 0;
+                transition: .5s;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+            &:hover{
+                &::after{
+                    height: 65px;
+                }
+            }
+        }
+
+        a{
+            color: #fff;
+            font-weight: normal;
         }
     }
 }
