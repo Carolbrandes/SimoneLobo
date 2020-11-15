@@ -1,0 +1,13 @@
+footer {
+  background-color: #292828;
+  width: 100vw;
+  height: 80px;
+  color: #fff;
+  position: fixed;
+  bottom: 0; }
+  footer a {
+    color: #fff; }
+  footer .container, footer .row {
+    height: inherit; }
+
+/*# sourceMappingURL=Footer.css.map */

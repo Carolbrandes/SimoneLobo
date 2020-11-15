@@ -1,0 +1,16 @@
+footer{
+    background-color: #292828;
+    width: 100vw;
+    height: 80px;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+
+    a{
+        color: #fff;
+    }
+
+    .container, .row{
+        height: inherit;
+    }
+}

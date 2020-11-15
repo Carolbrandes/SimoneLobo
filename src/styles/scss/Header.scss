@@ -1,0 +1,16 @@
+header{
+    background-color: #f3f1f1;
+}
+
+.menu{
+    ul{
+        list-style: none;
+
+        a{
+            color: $padrao;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+}

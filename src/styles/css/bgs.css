@@ -1,0 +1,11 @@
+.bg-home01 {
+  background-image: url(../../assets/banner-home.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-attachment: fixed;
+  position: relative;
+}
+
+/*# sourceMappingURL=bgs.css.map */
