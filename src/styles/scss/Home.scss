@@ -1,17 +1,31 @@
 .home {
         &__bg01 {
                 background-image: url(../../../src/assets/banner-home.png);
-                background-size: contain;
-                background-position: center -20px;
-                height: 100vh;
-                background-attachment: fixed;
+                background-size:cover;
+                background-position: right center;
+                background-repeat: no-repeat;
+                height: 70vh;
                 opacity: 0.7;
                 position: relative;
+                animation-name: alternarBgHomeMobile;
+                animation-duration: 60s;
+                animation-direction: alternate;
+                animation-iteration-count:infinite;
+                animation-timing-function: ease-in-out;
+
+
+                @media screen and (min-width: $xl) {
+                        background-attachment: fixed;
+                        background-position: center -20px;
+                        height: 100vh;
+                        background-size: contain;
+                        animation: none;
+                }
         }
 
         &__simone {
                 padding-bottom: 20px;
-                
+
                 ul {
                         list-style-type: square;
                 }
@@ -77,7 +91,7 @@
         background-image: url(../../assets/slider-fotos-consultorio02.jpg);
 }
 
-.carousel-item{
+.carousel-item {
         z-index: -1 !important;
 }
 
@@ -107,6 +121,15 @@
         }
 }
 
-.carousel-dots{
+.carousel-dots {
         display: none !important;
+}
+
+@keyframes alternarBgHomeMobile {
+        0%   {background-position: left center;}
+        25%  {background-position: right center;}
+        50%  {background-position: left center;}
+        75%  {background-position: right center;}
+        100% {background-position: left center;}
+
 }

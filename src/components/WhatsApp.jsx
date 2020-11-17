@@ -3,7 +3,7 @@ import iconeWhatsApp from '../assets/whatsapp.svg';
 
 const WhatsApp = () => {
     return (
-        <a className="whatsApp-link" href="">
+        <a className="whatsApp-link" href="" target="_blank">
             <img src={iconeWhatsApp} alt="WhatsApp" />
         </a>
     )

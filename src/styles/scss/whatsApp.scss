@@ -2,9 +2,13 @@
     position: fixed;
     bottom: 45%;
     right: 5px;
-    width: 70px;
+    width: 60px;
     z-index: 5;
     transition: 1s ease-in-out;
+
+    @media screen and (min-width: $xl) {
+        width: 70px;
+    }
 
     &:hover{
         transform: scale(1.2);

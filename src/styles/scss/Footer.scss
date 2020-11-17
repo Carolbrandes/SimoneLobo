@@ -1,16 +1,52 @@
-footer{
+footer {
     background-color: #292828;
     width: 100vw;
-    height: 80px;
+    height: 192px;
     color: #fff;
     position: fixed;
     bottom: 0;
 
-    a{
-        color: #fff;
+    @media screen and (min-width: $xl) {
+        height: 80px;
     }
 
-    .container, .row{
+    a {
+        color: #fff;
+
+        &:hover {
+            color: #99c73c;
+        }
+    }
+
+    .container,
+    .row {
         height: inherit;
+    }
+
+    .hover-redes-sociais {
+        &:hover {
+            color: #99c73c !important;
+        }
+    }
+
+    .endereco-position-mobile {
+        position: relative;
+        top: -35px;
+        left: 40px;
+
+        @media screen and (min-width: $xl) {
+            top: 0px;
+            left: 0px;
+        }
+    }
+
+    .whatsapp-position-mobile{
+        position: relative;
+        top: -5px;
+
+        @media screen and (min-width: $xl) {
+            top: 0px;
+            left: 0px;
+        }
     }
 }
