@@ -22,7 +22,7 @@ const Home = () => {
                                         <h1 className="titulo01 mt-3">Simone Lobo</h1>
                                         <Row className="justify-content-center align-items-center">
 
-                                                <Col lg="3" className="mb-3">
+                                                <Col xs="8" lg="3" className="mb-3">
                                                         <div className="home__foto-simone"></div>
                                                 </Col>
 
@@ -39,7 +39,7 @@ const Home = () => {
                                                                 </li>
                                                         </ul>
 
-                                                        <a className="button01" href="d-block">
+                                                        <a className="button01 mx-lg-0 mx-auto d-block" href="">
                                                                 Saiba Mais
                                                         </a>
                                                 </Col>
