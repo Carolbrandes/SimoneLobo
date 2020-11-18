@@ -19,7 +19,11 @@
   -webkit-box-shadow: 5px 5px 13px -6px #3a3a3a;
   box-shadow: 5px 5px 13px -6px #3a3a3a;
   transition: .8s ease-in-out;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
+  @media screen and (min-width: 1200px) {
+    .button01 {
+      width: 200px; } }
   .button01:hover {
     text-decoration: none;
     background-color: #657c36;
