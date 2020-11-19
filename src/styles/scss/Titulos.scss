@@ -1,12 +1,21 @@
 .titulo01{
-    font-size: 45px;
+    font-size: 35px;
     color: #333;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $xl) {
+        font-size: 45px;
+        margin-bottom: 50px;
+    }
 }
 
 .titulo02{
-    font-size: 35px;
+    font-size: 25px;
     color: #4e4e4e;
+
+    @media screen and (min-width: $xl) {
+        font-size: 35px;
+    }
 }

@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$xl".
-        on line 17 of src/styles/scss/Home.scss
+        on line 16 of src/styles/scss/Home.scss
 
+11:                 animation-duration: 60s;
 12:                 animation-direction: alternate;
-13:                 animation-iteration-count:infinite;
+13:                 animation-iteration-count: infinite;
 14:                 animation-timing-function: ease-in-out;
 15: 
-16: 
-17:                 @media screen and (min-width: $xl) {
-18:                         background-attachment: fixed;
-19:                         background-position: center -20px;
-20:                         height: 100vh;
-21:                         background-size: contain;
-22:                         animation: none;
+16:                 @media screen and (min-width: $xl) {
+17:                         background-attachment: fixed;
+18:                         background-position: center -20px;
+19:                         height: 100vh;
+20:                         background-size: contain;
+21:                         animation: none;
 
 Backtrace:
-src/styles/scss/Home.scss:17
+src/styles/scss/Home.scss:16
 C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:551:in `block in run_interp_no_strip'
@@ -84,4 +84,4 @@ C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$xl\".\A         on line 17 of src/styles/scss/Home.scss\A \A 12:                 animation-direction: alternate;\A 13:                 animation-iteration-count:infinite;\A 14:                 animation-timing-function: ease-in-out;\A 15: \A 16: \A 17:                 @media screen and (min-width: $xl) {\A 18:                         background-attachment: fixed;\A 19:                         background-position: center -20px;\A 20:                         height: 100vh;\A 21:                         background-size: contain;\A 22:                         animation: none;"; }
+  content: "Error: Undefined variable: \"$xl\".\A         on line 16 of src/styles/scss/Home.scss\A \A 11:                 animation-duration: 60s;\A 12:                 animation-direction: alternate;\A 13:                 animation-iteration-count: infinite;\A 14:                 animation-timing-function: ease-in-out;\A 15: \A 16:                 @media screen and (min-width: $xl) {\A 17:                         background-attachment: fixed;\A 18:                         background-position: center -20px;\A 19:                         height: 100vh;\A 20:                         background-size: contain;\A 21:                         animation: none;"; }

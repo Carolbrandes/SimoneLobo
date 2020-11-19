@@ -1,13 +1,20 @@
 .titulo01 {
-  font-size: 45px;
+  font-size: 35px;
   color: #333;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 50px; }
+  margin-bottom: 30px; }
+  @media screen and (min-width: 1200px) {
+    .titulo01 {
+      font-size: 45px;
+      margin-bottom: 50px; } }
 
 .titulo02 {
-  font-size: 35px;
+  font-size: 25px;
   color: #4e4e4e; }
+  @media screen and (min-width: 1200px) {
+    .titulo02 {
+      font-size: 35px; } }
 
 .button01 {
   background-color: #99cc33;
@@ -36,7 +43,10 @@ html {
   min-height: 100%; }
 
 section {
-  padding: 80px 0 150px 0; }
+  padding: 50px 0 170px 0; }
+  @media screen and (min-width: 1200px) {
+    section {
+      padding: 80px 0 150px 0; } }
 
 p {
   font-size: 14px; }
@@ -158,27 +168,35 @@ header {
       height: 300px;
       width: auto;
       background-position: center; } }
+.home__terapias {
+  padding-bottom: 50px; }
+  @media screen and (min-width: 1200px) {
+    .home__terapias {
+      padding-bottom: 150px; } }
 .home__bg02 {
   background-image: url(../../assets/bg02.jpg);
   background-size: cover;
-  background-position: center -1100px;
-  height: 400px;
+  background-position: center;
+  height: 500px;
   position: relative; }
-  .home__bg02 div {
-    background-color: rgba(126, 123, 123, 0.226);
+  @media screen and (min-width: 1200px) {
+    .home__bg02 {
+      background-position-y: 800px;
+      height: 500px; } }
+  .home__bg02 .bg-fundo-texto {
+    width: 100%;
     height: 100%;
+    background-color: rgba(29, 29, 29, 0.418);
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100vw; }
+    left: 0; }
   .home__bg02 blockquote {
-    color: #f7f5f5;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); }
+    color: #fff; }
   .home__bg02 p {
-    font-size: 28px; }
+    font-size: 25px; }
+    @media screen and (min-width: 1200px) {
+      .home__bg02 p {
+        font-size: 28px; } }
 
 .img-consultorio {
   background-size: cover;
@@ -194,6 +212,12 @@ header {
 
 .carousel-item {
   z-index: -1 !important; }
+
+.carousel-arrow {
+  display: none !important; }
+  @media screen and (min-width: 1200px) {
+    .carousel-arrow {
+      display: block; } }
 
 .carousel-prev {
   width: 80px !important;
@@ -218,7 +242,10 @@ header {
     height: 120px !important; }
 
 .carousel-dots {
-  display: none !important; }
+  display: block; }
+  @media screen and (min-width: 1200px) {
+    .carousel-dots {
+      display: none !important; } }
 
 @keyframes alternarBgHomeMobile {
   0% {

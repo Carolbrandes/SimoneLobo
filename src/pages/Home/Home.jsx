@@ -4,12 +4,42 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import iconeTCC from '../../assets/head-snowflake.svg';
 import iconeTDE from '../../assets/TDE.svg';
-import FotosConsultorio from '../../components/SliderConsultorio';
+import Carousel from '../../components/Carousel';
 import WhatsApp from '../../components/WhatsApp';
 
 
 
 const Home = () => {
+        const conteudoTerapias = [
+                <div className="d-flex flex-column align-items-center">
+                        <img className="img-fluid mb-3" src={iconeTCC} alt="Terapia Cognitiva Comportamental" />
+
+                        <h3 className="titulo02  text-center">Terapia Cognitiva Comportamental</h3>
+
+                        <p className="mb-5 text-center p-3">
+                                É a forma como cada pessoa vê, sente e pensa com relação à uma situação que causa desconforto, dor, incômodo, tristeza ou qualquer outra sensação negativa.
+                        </p>
+
+                        <a className="button01" href="d-block">
+                                Saiba Mais
+                        </a>
+                </div>,
+
+                <div className="d-flex flex-column align-items-center">
+                        <img className="img-fluid mb-3" src={iconeTDE} alt="Terapia dos Esquemas" />
+
+                        <h3 className="titulo02  text-center">Terapia dos <br /> Esquemas</h3>
+
+                        <p className="mb-4 text-center p-3">
+                                Usa-se esse método quando é identificado que uma pessoa reage impulsivamente a determinada vivência, sem ter controle sobre o que faz ou mesmo sem compreender o próprio comportamento.
+                        </p>
+
+                        <a className="button01" href="d-block">
+                                Saiba Mais
+                        </a>
+                </div>
+        ];
+
         return (
                 <>
                         <Header />
@@ -48,70 +78,54 @@ const Home = () => {
                                 </Container>
                         </section>
 
-                        <section>
+                        <section className="home__terapias">
                                 <Container>
                                         <h2 className="titulo01 mt-3">terapias</h2>
 
-                                        <Row className="justify-content-center align-items-baseline mt-5">
-                                                <Col lg="5">
-                                                        <div className="d-flex flex-column align-items-center">
-                                                                <img className="img-fluid mb-3" src={iconeTCC} alt="Terapia Cognitiva Comportamental" />
+                                        <div className="d-none d-lg-block">
+                                                <Row className="justify-content-center align-items-baseline mt-5">
+                                                        {conteudoTerapias.map(terapia => <Col lg="5">{terapia}</Col>)}
+                                                </Row>
+                                        </div>
 
-                                                                <h3 className="titulo02  text-center">Terapia Cognitiva Comportamental</h3>
-
-                                                                <p className="mb-5 text-center p-3">
-                                                                        É a forma como cada pessoa vê, sente e pensa com relação à uma situação que causa desconforto, dor, incômodo, tristeza ou qualquer outra sensação negativa.
-                                                                </p>
-
-                                                                <a className="button01" href="d-block">
-                                                                        Saiba Mais
-                                                                </a>
+                                        <div className="d-block d-lg-none">
+                                                <Carousel>
+                                                        <div>
+                                                                {conteudoTerapias[0]}
                                                         </div>
-                                                </Col>
 
-                                                <Col lg="5">
-                                                        <div className="d-flex flex-column align-items-center">
-                                                                <img className="img-fluid mb-3" src={iconeTDE} alt="Terapia dos Esquemas" />
-
-                                                                <h3 className="titulo02  text-center">Terapia dos <br /> Esquemas</h3>
-
-                                                                <p className="mb-4 text-center p-3">
-                                                                        Usa-se esse método quando é identificado que uma pessoa reage impulsivamente a determinada vivência, sem ter controle sobre o que faz ou mesmo sem compreender o próprio comportamento.
-                                                                </p>
-
-                                                                <a className="button01" href="d-block">
-                                                                        Saiba Mais
-                                                                </a>
+                                                        <div>
+                                                                {conteudoTerapias[1]}
                                                         </div>
-                                                </Col>
-                                        </Row>
+                                                </Carousel>
+                                        </div>
                                 </Container>
                         </section>
 
                         <section className="home__bg02">
-                                <div>
-                                        <Container>
-                                                <Row>
-                                                        <Col lg="12">
-                                                                <blockquote className="py-5 text-center">
-                                                                        <p>
-                                                                                Conheça todas as teorias, domine todas as técnicas, mas ao tocar uma alma humana, seja apenas outra alma humana.
+                                <div className="bg-fundo-texto d-flex align-items-center justify-content-center">
+                                        <Col xs="11" lg="5">
+                                                <blockquote className="text-center">
+                                                        <p>
+                                                                Conheça todas as teorias, domine todas as técnicas, mas ao tocar uma alma humana, seja apenas outra alma humana.
                                                                 </p>
 
-                                                                        <cite>Carl jung</cite>
-                                                                </blockquote>
-                                                        </Col>
-                                                </Row>
-                                        </Container>
+                                                        <cite>Carl jung</cite>
+                                                </blockquote>
+                                        </Col>
                                 </div>
                         </section>
 
-                        <section>
+                        <section className="mb-5 mb-lg-0">
                                 <Container>
                                         <h2 className="titulo01 mt-3">ambiente aconhegante</h2>
                                 </Container>
 
-                                <FotosConsultorio />
+                                <Carousel>
+                                        <div className="img-consultorio" id="img01-consultorio"></div>
+                                        <div className="img-consultorio" id="img02-consultorio"></div>
+                                        <div className="img-consultorio" id="img03-consultorio"></div>
+                                </Carousel>
 
                                 <Container>
                                         <h3 className="titulo02 text-center mt-4">Centro Empresarial Blue Center</h3>

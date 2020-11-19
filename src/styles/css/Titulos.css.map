@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAAA,SAAS;EACL,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,MAAM;EAClB,cAAc,EAAE,SAAS;EACzB,aAAa,EAAE,IAAI;;AAGvB,SAAS;EACL,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,OAAO",
-"sources": ["../scss/Titulos.scss"],
+"mappings": "",
+"sources": [],
 "names": [],
 "file": "Titulos.css"
 }
