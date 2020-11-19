@@ -122,7 +122,7 @@
         display: none !important;
 
         @media screen and (min-width: $xl) {
-                display: block;
+                display: block !important;
         }
 }
 
@@ -134,7 +134,7 @@
         transform: translateY(-50%) !important;
         &::before {
                 background-image: url(../../assets/before.svg) !important;
-                width: 120px !important;
+                width: 80px !important;
                 height: 120px !important;
         }
 }
@@ -147,7 +147,7 @@
         transform: translateY(-50%) !important;
         &::before {
                 background-image: url(../../assets/next.svg) !important;
-                width: 120px !important;
+                width: 80px !important;
                 height: 120px !important;
         }
 }

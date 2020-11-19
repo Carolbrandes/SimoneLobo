@@ -217,7 +217,7 @@ header {
   display: none !important; }
   @media screen and (min-width: 1200px) {
     .carousel-arrow {
-      display: block; } }
+      display: block !important; } }
 
 .carousel-prev {
   width: 80px !important;
@@ -227,7 +227,7 @@ header {
   transform: translateY(-50%) !important; }
   .carousel-prev::before {
     background-image: url(../../assets/before.svg) !important;
-    width: 120px !important;
+    width: 80px !important;
     height: 120px !important; }
 
 .carousel-next {
@@ -238,7 +238,7 @@ header {
   transform: translateY(-50%) !important; }
   .carousel-next::before {
     background-image: url(../../assets/next.svg) !important;
-    width: 120px !important;
+    width: 80px !important;
     height: 120px !important; }
 
 .carousel-dots {
