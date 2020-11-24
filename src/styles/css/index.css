@@ -61,25 +61,36 @@ header {
   z-index: 999; }
 
 .menu {
-  display: none; }
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  background-color: #f3f1f1;
+  width: 100vw;
+  padding: 20px; }
   @media screen and (min-width: 1200px) {
     .menu {
-      display: block; } }
-  .menu ul {
-    list-style: none; }
-    .menu ul li::after {
-      content: "";
       display: block;
-      background-color: #99c73c;
-      width: 0;
-      height: 3px;
-      margin: 2px auto;
-      transition: 0.5s;
-      position: relative; }
-    .menu ul li:hover::after {
-      width: 100%; }
-    .menu ul li:hover .submenu {
-      display: block; }
+      position: initial;
+      width: auto; } }
+  .menu ul {
+    list-style: none;
+    padding: 0; }
+    .menu ul li {
+      margin-top: 20px; }
+      .menu ul li::after {
+        content: "";
+        display: block;
+        background-color: #99c73c;
+        width: 0;
+        height: 3px;
+        margin: 2px auto;
+        transition: 0.5s;
+        position: relative; }
+      .menu ul li:hover::after {
+        width: 100%; }
+      .menu ul li:hover .submenu {
+        display: block; }
     .menu ul a {
       color: #3d3d3d;
       font-size: 18px;
@@ -133,6 +144,7 @@ header {
   background-position: right center;
   background-repeat: no-repeat;
   height: 70vh;
+  width: 100vw;
   opacity: 0.7;
   position: relative;
   animation-name: alternarBgHomeMobile;
@@ -145,8 +157,13 @@ header {
       background-attachment: fixed;
       background-position: center -20px;
       height: 100vh;
-      background-size: contain;
       animation: none; } }
+  @media screen and (min-width: 1500px) {
+    .home__bg01 {
+      background-position-y: -100px; } }
+  @media screen and (min-width: 1900px) {
+    .home__bg01 {
+      background-position-y: -200px; } }
 .home__simone {
   padding-bottom: 20px; }
   .home__simone ul {
@@ -170,6 +187,8 @@ header {
       background-position: center; } }
 .home__terapias {
   padding-bottom: 50px; }
+  .home__terapias [wfd-id="31"] {
+    height: 445px; }
   @media screen and (min-width: 1200px) {
     .home__terapias {
       padding-bottom: 150px; } }
@@ -197,12 +216,19 @@ header {
     @media screen and (min-width: 1200px) {
       .home__bg02 p {
         font-size: 28px; } }
+.home__consultorio [wfd-id="15"] {
+  height: 250px !important; }
+  .home__consultorio [wfd-id="15"] .carousel-item {
+    top: -80px; }
 
 .img-consultorio {
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  height: 500px; }
+  height: 400px; }
+  @media screen and (min-width: 1200px) {
+    .img-consultorio {
+      height: 500px; } }
 
 #img01-consultorio {
   background-image: url(../../assets/slider-fotos-consultorio.png); }

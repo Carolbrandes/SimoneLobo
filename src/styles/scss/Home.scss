@@ -5,6 +5,7 @@
                 background-position: right center;
                 background-repeat: no-repeat;
                 height: 70vh;
+                width: 100vw;
                 opacity: 0.7;
                 position: relative;
                 animation-name: alternarBgHomeMobile;
@@ -13,12 +14,19 @@
                 animation-iteration-count: infinite;
                 animation-timing-function: ease-in-out;
 
-                @media screen and (min-width: $xl) {
+                @media screen and (min-width: 1200px) {
                         background-attachment: fixed;
                         background-position: center -20px;
                         height: 100vh;
-                        background-size: contain;
                         animation: none;
+                }
+
+                @media screen and (min-width: 1500px) {
+                        background-position-y: -100px;
+                }
+
+                @media screen and (min-width: 1900px) {
+                        background-position-y: -200px;
                 }
         }
 
@@ -44,7 +52,7 @@
                 border-radius: 50%;
                 border: 1px solid rgba(51, 51, 51, 0.253);
 
-                @media screen and (min-width: $xl) {
+                @media screen and (min-width: 1200px) {
                         border-radius: 10px;
                         height: 300px;
                         width: auto;
@@ -55,13 +63,16 @@
         &__terapias{
                 padding-bottom: 50px;
 
-                @media screen and (min-width: $xl) {
+                [wfd-id="31"]{
+                        height: 445px;
+                }
+
+                @media screen and (min-width: 1200px) {
                         padding-bottom: 150px;
                 }
         }
 
         &__bg02 {
-                // background-image: linear-gradient(rgb(116, 150, 48), rgb(62, 77, 32));
                 background-image: url(../../assets/bg02.jpg);
                 background-size: cover;
                 background-position: center;
@@ -69,7 +80,7 @@
                 position: relative;
                
 
-                @media screen and (min-width: $xl) {
+                @media screen and (min-width: 1200px) {
                         background-position-y: 800px;
                         height: 500px;
                 }
@@ -92,18 +103,32 @@
                         font-size: 25px;
                        
 
-                        @media screen and (min-width: $xl) {
+                        @media screen and (min-width: 1200px) {
                                 font-size: 28px;
                         }
                 }
         }
+
+        &__consultorio{
+               [wfd-id="15"]{
+                       height: 250px !important;
+
+                       .carousel-item{
+                               top: -80px;
+                       }
+               }
+        }
 }
 
 .img-consultorio {
-        background-size: cover;
+        background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
-        height: 500px;
+        height: 400px;
+
+        @media screen and (min-width: 1200px) {
+                height: 500px;
+        }
 }
 
 #img01-consultorio {
@@ -121,7 +146,7 @@
 .carousel-arrow {
         display: none !important;
 
-        @media screen and (min-width: $xl) {
+        @media screen and (min-width: 1200px) {
                 display: block !important;
         }
 }
@@ -155,7 +180,7 @@
 .carousel-dots {
         display: block;
 
-        @media screen and (min-width: $xl) {
+        @media screen and (min-width: 1200px) {
                 display: none !important;
         }
 }

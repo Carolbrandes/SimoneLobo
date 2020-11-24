@@ -84,7 +84,7 @@ const Home = () => {
 
                                         <div className="d-none d-lg-block">
                                                 <Row className="justify-content-center align-items-baseline mt-5">
-                                                        {conteudoTerapias.map(terapia => <Col lg="5">{terapia}</Col>)}
+                                                        {conteudoTerapias.map((terapia, index) => <Col key={index} lg="5">{terapia}</Col>)}
                                                 </Row>
                                         </div>
 
@@ -116,18 +116,17 @@ const Home = () => {
                                 </div>
                         </section>
 
-                        <section className="mb-5 mb-lg-0">
+                        <section className="home__consultorio mb-5 mb-lg-0">
                                 <Container>
                                         <h2 className="titulo01 mt-3">ambiente aconhegante</h2>
-                                </Container>
 
-                                <Carousel>
-                                        <div className="img-consultorio" id="img01-consultorio"></div>
-                                        <div className="img-consultorio" id="img02-consultorio"></div>
-                                        <div className="img-consultorio" id="img03-consultorio"></div>
-                                </Carousel>
+                                        <Carousel>
+                                                <div className="img-consultorio" id="img01-consultorio"></div>
+                                                <div className="img-consultorio" id="img02-consultorio"></div>
+                                                <div className="img-consultorio" id="img03-consultorio"></div>
+                                        </Carousel>
 
-                                <Container>
+
                                         <h3 className="titulo02 text-center mt-4">Centro Empresarial Blue Center</h3>
                                         <p className="text-center">
                                                 Av das Américas 12.300 - Sala 233 <br />

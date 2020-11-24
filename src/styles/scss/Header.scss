@@ -8,15 +8,26 @@ header {
 
 .menu {
     display: none;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    background-color: #f3f1f1;
+    width: 100vw;
+    padding: 20px;
 
-    @media screen and (min-width: $xl) {
+    @media screen and (min-width:1200px) {
         display: block;
+        position: initial;
+        width: auto;
     }
 
     ul {
         list-style: none;
+        padding: 0;
+
 
         li {
+            margin-top: 20px;
             &::after {
                 content: "";
                 display: block;
