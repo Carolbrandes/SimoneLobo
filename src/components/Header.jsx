@@ -2,11 +2,11 @@ import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import logo from '../assets/logo.png';
 import { FaBars } from 'react-icons/fa';
-
+import { Link, useHistory } from 'react-router-dom';
 
 const Header = () => {
-    const [menuMobile, setMenuMobile ] = React.useState(false);
-    
+    const [menuMobile, setMenuMobile] = React.useState(false);
+
     function exibicaoMenu() {
         setMenuMobile(!menuMobile);
         const menu = document.querySelector(".menu");
@@ -30,22 +30,24 @@ const Header = () => {
                     <Col lg="7" className="d-none d-lg-block p-0 d-flex justify-content-lg-end menu-wrapper">
                         <nav className="menu">
                             <ul className="d-flex flex-lg-row flex-column">
-                                <li className="mr-lg-5"><a href="">ínicio</a></li>
                                 <li className="mr-lg-5">
-                                    <a href="">Terapias</a>
+                                    <Link to="/">ínicio</Link>
+                                </li>
+                                <li className="mr-lg-5">
+                                    <a href="#">Terapias</a>
 
                                     <ul className="submenu">
                                         <li>
-                                            <a href="">
+                                            <Link to="/terapias/terapia-cognitiva-comportamental">
                                                 Terapia Cognitiva Comportamental
-                                            </a>
+                                           </Link>
                                         </li>
 
                                         <li>
-                                            <a href="">
+                                            <Link to="/terapias/terapia-dos-esquemas">
                                                 Terapia dos
                                                 Esquemas
-                                            </a>
+                                          </Link>
                                         </li>
                                     </ul>
                                 </li>

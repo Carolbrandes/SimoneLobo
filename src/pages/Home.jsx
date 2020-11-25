@@ -1,12 +1,12 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
-import iconeTCC from '../../assets/head-snowflake.svg';
-import iconeTDE from '../../assets/TDE.svg';
-import Carousel from '../../components/Carousel';
-import WhatsApp from '../../components/WhatsApp';
-
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import iconeTCC from '../assets/head-snowflake.svg';
+import iconeTDE from '../assets/TDE.svg';
+import Carousel from '../components/Carousel';
+import WhatsApp from '../components/WhatsApp';
+import '../styles/css/Home.css';
 
 
 const Home = () => {

@@ -5,8 +5,9 @@
 @import './App.scss';
 @import './Header.scss';
 @import './whatsApp.scss';
-@import './Home.scss';
 @import './Footer.scss';
 
-
-
+.border-bottom{
+    border-bottom: 5px solid $verde01;
+    padding-bottom: 40px;
+}
