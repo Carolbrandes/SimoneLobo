@@ -282,6 +282,9 @@ section {
 
 .carousel-fotos .carousel-track {
   height: 200px !important; }
+  @media screen and (min-width: 1200px) {
+    .carousel-fotos .carousel-track {
+      height: 500px !important; } }
 .carousel-fotos .carousel-prev {
   width: 80px !important;
   height: 80px !important;
@@ -292,6 +295,9 @@ section {
     background-image: url(../../assets/before.svg) !important;
     width: 80px !important;
     height: 120px !important; }
+  @media screen and (min-width: 1200px) {
+    .carousel-fotos .carousel-prev {
+      top: 35% !important; } }
 .carousel-fotos .carousel-next {
   width: 80px !important;
   height: 80px !important;
@@ -302,6 +308,9 @@ section {
     background-image: url(../../assets/next.svg) !important;
     width: 80px !important;
     height: 120px !important; }
+  @media screen and (min-width: 1200px) {
+    .carousel-fotos .carousel-next {
+      top: 35% !important; } }
 .carousel-fotos .carousel-dots {
   display: block; }
   @media screen and (min-width: 1200px) {

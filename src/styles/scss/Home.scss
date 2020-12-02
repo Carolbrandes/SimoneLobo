@@ -144,6 +144,10 @@ section {
 .carousel-fotos {
         .carousel-track {
                 height: 200px !important;
+
+                @media screen and (min-width: 1200px){
+                        height: 500px !important;
+                }
         }
 
         .carousel-prev {
@@ -157,6 +161,11 @@ section {
                         width: 80px !important;
                         height: 120px !important;
                 }
+
+                @media screen and (min-width: 1200px) {
+                        top: 35% !important;
+                }
+
         }
 
         .carousel-next {
@@ -170,9 +179,13 @@ section {
                         width: 80px !important;
                         height: 120px !important;
                 }
+
+                @media screen and (min-width: 1200px) {
+                        top: 35% !important;
+                }
         }
 
-        
+
         .carousel-dots {
                 display: block;
 

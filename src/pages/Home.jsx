@@ -12,13 +12,13 @@ import '../styles/css/Home.css';
 const Home = () => {
         const conteudoTerapias = [
                 <div className="d-flex flex-column align-items-center">
-                        <Col xs="4" xl="5">
+                        <Col xs="4" xl="4">
                                 <img className="img-fluid mb-3" src={iconeTCC} alt="Terapia Cognitiva Comportamental" />
                         </Col>
 
                         <h3 className="titulo02  text-center">Terapia Cognitiva Comportamental</h3>
 
-                        <p className="mb-xl-5 mb-3 text-center p-3">
+                        <p className="mb-xl-4 mb-3 text-center p-3">
                                 É a forma como cada pessoa vê, sente e pensa com relação à uma situação que causa desconforto, dor, incômodo, tristeza ou qualquer outra sensação negativa.
                         </p>
 
@@ -28,18 +28,18 @@ const Home = () => {
                 </div>,
 
                 <div className="d-flex flex-column align-items-center">
-                        <Col xs="4" xl="5">
+                        <Col xs="4" xl="4">
                                 <img className="img-fluid mb-3" src={iconeTDE} alt="Terapia dos Esquemas" />
                         </Col>
 
 
                         <h3 className="titulo02  text-center">Terapia dos <br /> Esquemas</h3>
 
-                        <p className="mb-xl-5 mb-3 text-center p-3">
+                        <p className="mb-xl-4 mb-3 text-center p-3">
                                 Usa-se esse método quando é identificado que uma pessoa reage impulsivamente a determinada vivência, sem ter controle sobre o que faz ou mesmo sem compreender o próprio comportamento.
                         </p>
 
-                        <a className="button01" href="d-block">
+                        <a className="button01 mt-xl-n3" href="d-block">
                                 Saiba Mais
                         </a>
                 </div>
