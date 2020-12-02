@@ -83,12 +83,12 @@ header {
                 transition: 0.5s;
                 position: absolute;
                 left: 0;
-                top: 0;
+                top: -20px;
             }
 
             &:hover {
                 &::after {
-                    height: 65px;
+                    height: 85px;
                 }
             }
         }

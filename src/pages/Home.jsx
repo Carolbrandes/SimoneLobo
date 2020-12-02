@@ -12,11 +12,13 @@ import '../styles/css/Home.css';
 const Home = () => {
         const conteudoTerapias = [
                 <div className="d-flex flex-column align-items-center">
-                        <img className="img-fluid mb-3" src={iconeTCC} alt="Terapia Cognitiva Comportamental" />
+                        <Col xs="4" xl="5">
+                                <img className="img-fluid mb-3" src={iconeTCC} alt="Terapia Cognitiva Comportamental" />
+                        </Col>
 
                         <h3 className="titulo02  text-center">Terapia Cognitiva Comportamental</h3>
 
-                        <p className="mb-5 text-center p-3">
+                        <p className="mb-xl-5 mb-3 text-center p-3">
                                 É a forma como cada pessoa vê, sente e pensa com relação à uma situação que causa desconforto, dor, incômodo, tristeza ou qualquer outra sensação negativa.
                         </p>
 
@@ -26,11 +28,14 @@ const Home = () => {
                 </div>,
 
                 <div className="d-flex flex-column align-items-center">
-                        <img className="img-fluid mb-3" src={iconeTDE} alt="Terapia dos Esquemas" />
+                        <Col xs="4" xl="5">
+                                <img className="img-fluid mb-3" src={iconeTDE} alt="Terapia dos Esquemas" />
+                        </Col>
+
 
                         <h3 className="titulo02  text-center">Terapia dos <br /> Esquemas</h3>
 
-                        <p className="mb-4 text-center p-3">
+                        <p className="mb-xl-5 mb-3 text-center p-3">
                                 Usa-se esse método quando é identificado que uma pessoa reage impulsivamente a determinada vivência, sem ter controle sobre o que faz ou mesmo sem compreender o próprio comportamento.
                         </p>
 
@@ -88,7 +93,7 @@ const Home = () => {
                                                 </Row>
                                         </div>
 
-                                        <div className="d-block d-lg-none">
+                                        <div className="d-block d-lg-none carousel-terapias">
                                                 <Carousel>
                                                         <div>
                                                                 {conteudoTerapias[0]}
@@ -120,11 +125,13 @@ const Home = () => {
                                 <Container>
                                         <h2 className="titulo01 mt-3">ambiente aconhegante</h2>
 
-                                        <Carousel>
-                                                <div className="img-consultorio" id="img01-consultorio"></div>
-                                                <div className="img-consultorio" id="img02-consultorio"></div>
-                                                <div className="img-consultorio" id="img03-consultorio"></div>
-                                        </Carousel>
+                                        <div className="carousel-fotos">
+                                                <Carousel>
+                                                        <div className="img-consultorio" id="img01-consultorio"></div>
+                                                        <div className="img-consultorio" id="img02-consultorio"></div>
+                                                        <div className="img-consultorio" id="img03-consultorio"></div>
+                                                </Carousel>
+                                        </div>
 
 
                                         <h3 className="titulo02 text-center mt-4">Centro Empresarial Blue Center</h3>

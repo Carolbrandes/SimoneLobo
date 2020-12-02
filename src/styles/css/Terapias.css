@@ -1,5 +1,5 @@
 .titulo01 {
-  font-size: 35px;
+  font-size: 25px;
   color: #333;
   text-align: center;
   text-transform: uppercase;
@@ -10,7 +10,7 @@
       margin-bottom: 50px; } }
 
 .titulo02 {
-  font-size: 25px;
+  font-size: 18px;
   color: #4e4e4e; }
   @media screen and (min-width: 1200px) {
     .titulo02 {
@@ -20,17 +20,19 @@
   background-color: #99cc33;
   color: #fff;
   border-radius: 60px;
-  font-size: 20px;
-  padding: 20px 40px;
+  font-size: 16px;
+  padding: 10px;
   text-transform: uppercase;
   -webkit-box-shadow: 5px 5px 13px -6px #3a3a3a;
   box-shadow: 5px 5px 13px -6px #3a3a3a;
-  transition: .8s ease-in-out;
+  transition: 0.8s ease-in-out;
   text-align: center;
-  width: 100%; }
+  width: 180px; }
   @media screen and (min-width: 1200px) {
     .button01 {
-      width: 200px; } }
+      width: 200px;
+      padding: 20px 40px;
+      font-size: 20px; } }
   .button01:hover {
     text-decoration: none;
     background-color: #657c36;
@@ -43,7 +45,12 @@ html {
   min-height: 100%; }
 
 main {
-  padding-top: 200px; }
+  padding-top: 100px;
+  padding-bottom: 50px; }
+  @media (min-width: 1200px) {
+    main {
+      padding-top: 200px;
+      padding-bottom: 100px; } }
 
 .center {
   text-align: center; }
@@ -117,9 +124,9 @@ header {
         transition: 0.5s;
         position: absolute;
         left: 0;
-        top: 0; }
+        top: -20px; }
       .menu .submenu li:hover::after {
-        height: 65px; }
+        height: 85px; }
     .menu .submenu a {
       color: #fff;
       font-weight: normal; }

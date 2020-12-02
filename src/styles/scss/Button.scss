@@ -2,20 +2,22 @@
     background-color: #99cc33;
     color: #fff;
     border-radius: 60px;
-    font-size: 20px;
-    padding: 20px 40px;
+    font-size: 16px;
+    padding: 10px;
     text-transform: uppercase;
     -webkit-box-shadow: 5px 5px 13px -6px #3a3a3a;
     box-shadow: 5px 5px 13px -6px #3a3a3a;
-    transition: .8s ease-in-out;
+    transition: 0.8s ease-in-out;
     text-align: center;
-    width: 100%;
+    width: 180px;
 
-    @media screen and (min-width: $xl) {
-       width: 200px;
-}
+    @media screen and (min-width: 1200px) {
+        width: 200px;
+        padding: 20px 40px;
+        font-size: 20px;
+    }
 
-    &:hover{
+    &:hover {
         text-decoration: none;
         background-color: #657c36;
         color: #fff;

@@ -43,7 +43,7 @@ const Terapias = (props) => {
 
                     </section>
 
-                    <section className="border-bottom">
+                    <section>
                         <h2 className="titulo02 center mb-4">Como funciona?</h2>
 
                         <Col lg="8"  className="mx-auto">
