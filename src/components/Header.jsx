@@ -6,11 +6,18 @@ import { Link, useHistory } from 'react-router-dom';
 
 const Header = () => {
     const [menuMobile, setMenuMobile] = React.useState(false);
+    const [subMenuMobile, setSubMenuMobile] = React.useState(false);
 
     function exibicaoMenu() {
         setMenuMobile(!menuMobile);
         const menu = document.querySelector(".menu");
         menuMobile ? menu.style.display = "block" : menu.style.display = "none";
+    }
+
+    function exibicaoSubmenu(){
+        setSubMenuMobile(!subMenuMobile);
+        const submenu = document.querySelector(".submenu");
+        subMenuMobile ? submenu.style.display = "block" : submenu.style.display = "none";
     }
 
     return (
@@ -34,9 +41,9 @@ const Header = () => {
                                     <Link to="/">ínicio</Link>
                                 </li>
                                 <li className="mr-lg-5">
-                                    <a href="#">Terapias</a>
+                                    <a onClick={exibicaoSubmenu} href="#">Terapias</a>
 
-                                    <ul className="submenu">
+                                    <ul className="submenu mb-3 mb-xl-0">
                                         <li>
                                             <Link to="/terapias/terapia-cognitiva-comportamental">
                                                 Terapia Cognitiva Comportamental

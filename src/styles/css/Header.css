@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$padrao".
-        on line 54 of src/styles/scss/Header.scss
+        on line 59 of src/styles/scss/Header.scss
 
-49:                 display: block;
-50:             }
-51:         }
-52: 
-53:         a {
-54:             color: $padrao;
-55:             font-size: 18px;
-56:             font-weight: bold;
-57:             text-transform: uppercase;
-58: 
-59:             &:hover {
+54:                 display: block;
+55:             }
+56:         }
+57: 
+58:         a {
+59:             color: $padrao;
+60:             font-size: 18px;
+61:             font-weight: bold;
+62:             text-transform: uppercase;
+63: 
+64:             &:hover {
 
 Backtrace:
-src/styles/scss/Header.scss:54
+src/styles/scss/Header.scss:59
 C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
@@ -91,4 +91,4 @@ C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$padrao\".\A         on line 54 of src/styles/scss/Header.scss\A \A 49:                 display: block;\A 50:             }\A 51:         }\A 52: \A 53:         a {\A 54:             color: $padrao;\A 55:             font-size: 18px;\A 56:             font-weight: bold;\A 57:             text-transform: uppercase;\A 58: \A 59:             &:hover {"; }
+  content: "Error: Undefined variable: \"$padrao\".\A         on line 59 of src/styles/scss/Header.scss\A \A 54:                 display: block;\A 55:             }\A 56:         }\A 57: \A 58:         a {\A 59:             color: $padrao;\A 60:             font-size: 18px;\A 61:             font-weight: bold;\A 62:             text-transform: uppercase;\A 63: \A 64:             &:hover {"; }

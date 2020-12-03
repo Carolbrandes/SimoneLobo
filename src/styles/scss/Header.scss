@@ -5,17 +5,18 @@ header {
     z-index: 999;
 }
 
-
 .menu {
     display: none;
-    position: absolute;
-    top: 0px;
+    position: fixed;
+    top: 65px;
     left: 0;
     background-color: #f3f1f1;
     width: 100vw;
     padding: 20px;
+    height: 90vh;
+    z-index: 999;
 
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width: 1200px) {
         display: block;
         position: initial;
         width: auto;
@@ -25,23 +26,27 @@ header {
         list-style: none;
         padding: 0;
 
-
         li {
             margin-top: 20px;
-            &::after {
-                content: "";
-                display: block;
-                background-color: #99c73c;
-                width: 0;
-                height: 3px;
-                margin: 2px auto;
-                transition: 0.5s;
-                position: relative;
+            @media screen and (min-width: 1200px) {
+                margin-top: 0;
+                &::after {
+                    content: "";
+                    display: block;
+                    background-color: #99c73c;
+                    width: 0;
+                    height: 3px;
+                    margin: 2px auto;
+                    transition: 0.5s;
+                    position: relative;
+                }
             }
 
             &:hover {
                 &::after {
-                    width: 100%;
+                    @media screen and (min-width: 1200px) {
+                        width: 100%;
+                    }
                 }
             }
 
@@ -65,30 +70,47 @@ header {
     .submenu {
         display: none;
         background-color: #333;
-        position: absolute;
-        top: 75px;
-        padding: 0;
+        position: relative;
+        top: 5px;
+        left: -20px;
+        width: 100vw;
+    
+        @media screen and (min-width: 1200px) {
+            position: absolute;
+            top: 75px;
+            padding: 0;
+            width: auto;
+        }
 
         li {
             border-bottom: 1px solid rgba(255, 255, 255, 0.445);
-            padding: 20px 40px;
+            padding: 20px;
             position: relative;
+            margin-top: 0;
+
+            @media screen and (min-width: 1200px) {
+                padding: 20px 40px;
+            }
 
             &::after {
-                content: "";
-                display: inline-block;
-                background-color: #99c73c;
-                width: 5px !important;
-                height: 0;
-                transition: 0.5s;
-                position: absolute;
-                left: 0;
-                top: -20px;
+                @media screen and (min-width: 1200px) {
+                    content: "";
+                    display: inline-block;
+                    background-color: #99c73c;
+                    width: 5px !important;
+                    height: 0;
+                    transition: 0.5s;
+                    position: absolute;
+                    left: 0;
+                    top: -20px;
+                }
             }
 
             &:hover {
                 &::after {
-                    height: 85px;
+                    @media screen and (min-width: 1200px) {
+                        height: 85px;
+                    }
                 }
             }
         }
@@ -96,6 +118,11 @@ header {
         a {
             color: #fff;
             font-weight: normal;
+            font-size: 14px;
+
+            @media screen and (min-width: 1200px) {
+                font-size: 16px;
+            }
         }
     }
 }

@@ -69,12 +69,14 @@ header {
 
 .menu {
   display: none;
-  position: absolute;
-  top: 0px;
+  position: fixed;
+  top: 65px;
   left: 0;
   background-color: #f3f1f1;
   width: 100vw;
-  padding: 20px; }
+  padding: 20px;
+  height: 90vh;
+  z-index: 999; }
   @media screen and (min-width: 1200px) {
     .menu {
       display: block;
@@ -85,17 +87,21 @@ header {
     padding: 0; }
     .menu ul li {
       margin-top: 20px; }
-      .menu ul li::after {
-        content: "";
-        display: block;
-        background-color: #99c73c;
-        width: 0;
-        height: 3px;
-        margin: 2px auto;
-        transition: 0.5s;
-        position: relative; }
-      .menu ul li:hover::after {
-        width: 100%; }
+      @media screen and (min-width: 1200px) {
+        .menu ul li {
+          margin-top: 0; }
+          .menu ul li::after {
+            content: "";
+            display: block;
+            background-color: #99c73c;
+            width: 0;
+            height: 3px;
+            margin: 2px auto;
+            transition: 0.5s;
+            position: relative; } }
+      @media screen and (min-width: 1200px) {
+        .menu ul li:hover::after {
+          width: 100%; } }
       .menu ul li:hover .submenu {
         display: block; }
     .menu ul a {
@@ -108,28 +114,45 @@ header {
   .menu .submenu {
     display: none;
     background-color: #333;
-    position: absolute;
-    top: 75px;
-    padding: 0; }
+    position: relative;
+    top: 5px;
+    left: -20px;
+    width: 100vw; }
+    @media screen and (min-width: 1200px) {
+      .menu .submenu {
+        position: absolute;
+        top: 75px;
+        padding: 0;
+        width: auto; } }
     .menu .submenu li {
       border-bottom: 1px solid rgba(255, 255, 255, 0.445);
-      padding: 20px 40px;
-      position: relative; }
-      .menu .submenu li::after {
-        content: "";
-        display: inline-block;
-        background-color: #99c73c;
-        width: 5px !important;
-        height: 0;
-        transition: 0.5s;
-        position: absolute;
-        left: 0;
-        top: -20px; }
-      .menu .submenu li:hover::after {
-        height: 85px; }
+      padding: 20px;
+      position: relative;
+      margin-top: 0; }
+      @media screen and (min-width: 1200px) {
+        .menu .submenu li {
+          padding: 20px 40px; } }
+      @media screen and (min-width: 1200px) {
+        .menu .submenu li::after {
+          content: "";
+          display: inline-block;
+          background-color: #99c73c;
+          width: 5px !important;
+          height: 0;
+          transition: 0.5s;
+          position: absolute;
+          left: 0;
+          top: -20px; } }
+      @media screen and (min-width: 1200px) {
+        .menu .submenu li:hover::after {
+          height: 85px; } }
     .menu .submenu a {
       color: #fff;
-      font-weight: normal; }
+      font-weight: normal;
+      font-size: 14px; }
+      @media screen and (min-width: 1200px) {
+        .menu .submenu a {
+          font-size: 16px; } }
 
 .whatsApp-link {
   position: fixed;
