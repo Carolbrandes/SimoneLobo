@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'reactstrap';
 import logo from '../assets/logo.png';
 import { FaBars } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import RedesSociais from './RedesSociais';
 
 const Header = () => {
     const [menuMobile, setMenuMobile] = React.useState(false);
@@ -29,7 +30,7 @@ const Header = () => {
                     </Col>
 
                     <Col xs="2" className="d-block d-lg-none">
-                        <span  onClick={exibicaoMenu}>
+                        <span onClick={exibicaoMenu}>
                             <FaBars size={35} color="#333" />
                         </span>
                     </Col>
@@ -74,8 +75,13 @@ const Header = () => {
                                           </Link>
                                 </li>
                             </ul>
+
+                            <nav className="d-block d-xl-none redes-sociais">
+                                <RedesSociais color="#99c73c" />
+                            </nav>
                         </nav>
                     </Col>
+
 
                 </Row>
             </Container>

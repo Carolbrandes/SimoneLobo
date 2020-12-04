@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import { FaInstagram, FaFacebookSquare, FaLinkedin, FaMapMarkerAlt, FaWhatsapp } from 'react-icons/fa';
+import {  FaMapMarkerAlt, FaWhatsapp } from 'react-icons/fa';
+import RedesSocias from './RedesSociais';
 
 const Footer = () => {
     return (
@@ -25,17 +26,7 @@ const Footer = () => {
                     </Col>
 
                     <Col xs="7" lg="2" className="p-0 d-flex justify-content-lg-end ml-3 ml-lg-0">
-                        <p className="p-0 m-0">
-                            <a className="mr-3" href="https://www.google.com.br/" target="_blank"  rel="noreferrer  noopener" >
-                                <FaInstagram className="hover-redes-sociais" size={35} color="#fff" />
-                            </a>
-                            <a className="mr-3" href="https://www.google.com.br/" target="_blank"  rel="noreferrer  noopener" >
-                                <FaFacebookSquare className="hover-redes-sociais" size={35} color="#fff" />
-                            </a>
-                            <a href="https://www.google.com.br/" target="_blank"  rel="noreferrer  noopener" >
-                                <FaLinkedin className="hover-redes-sociais" size={35} color="#fff" />
-                            </a>
-                        </p>
+                       <RedesSocias color="#fff" />
                     </Col>
                 </Row>
             </Container>
