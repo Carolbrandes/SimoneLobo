@@ -20,6 +20,7 @@ header {
         display: block;
         position: initial;
         width: auto;
+        height: auto;
     }
 
     ul {
@@ -28,6 +29,11 @@ header {
 
         li {
             margin-top: 20px;
+            color: $padrao;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+
             @media screen and (min-width: 1200px) {
                 margin-top: 0;
                 &::after {
@@ -40,13 +46,11 @@ header {
                     transition: 0.5s;
                     position: relative;
                 }
-            }
 
-            &:hover {
-                &::after {
-                    @media screen and (min-width: 1200px) {
+                &:hover {
+                    &::after{
                         width: 100%;
-                    }
+                    }      
                 }
             }
 
@@ -57,9 +61,6 @@ header {
 
         a {
             color: $padrao;
-            font-size: 18px;
-            font-weight: bold;
-            text-transform: uppercase;
 
             &:hover {
                 text-decoration: none;
@@ -74,12 +75,15 @@ header {
         top: 5px;
         left: -20px;
         width: 100vw;
-    
+        overflow: hidden;
+
         @media screen and (min-width: 1200px) {
             position: absolute;
             top: 75px;
             padding: 0;
-            width: auto;
+            width: 370px;
+            top: 35px;
+            left: 0;
         }
 
         li {
@@ -87,9 +91,10 @@ header {
             padding: 20px;
             position: relative;
             margin-top: 0;
-
+           
             @media screen and (min-width: 1200px) {
                 padding: 20px 40px;
+                font-size: 16px;
             }
 
             &::after {
@@ -102,27 +107,25 @@ header {
                     transition: 0.5s;
                     position: absolute;
                     left: 0;
-                    top: -20px;
+                    top: -5px;
                 }
             }
 
             &:hover {
                 &::after {
                     @media screen and (min-width: 1200px) {
-                        height: 85px;
+                        height: 68px;
                     }
                 }
             }
         }
 
-        a {
+        a{
             color: #fff;
             font-weight: normal;
             font-size: 14px;
-
-            @media screen and (min-width: 1200px) {
-                font-size: 16px;
-            }
         }
     }
+
+  
 }

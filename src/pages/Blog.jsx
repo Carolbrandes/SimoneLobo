@@ -10,7 +10,7 @@ import '../styles/css/Home.css';
 import { Link } from 'react-router-dom';
 
 
-const Home = () => {
+const Blog = () => {
         const conteudoTerapias = [
                 <div className="d-flex flex-column align-items-center">
                         <Col xs="4" xl="4">
@@ -151,4 +151,4 @@ const Home = () => {
         )
 }
 
-export default Home;
+export default Blog;

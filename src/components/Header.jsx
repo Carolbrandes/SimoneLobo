@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import logo from '../assets/logo.png';
 import { FaBars } from 'react-icons/fa';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [menuMobile, setMenuMobile] = React.useState(false);
@@ -14,7 +14,7 @@ const Header = () => {
         menuMobile ? menu.style.display = "block" : menu.style.display = "none";
     }
 
-    function exibicaoSubmenu(){
+    function exibicaoSubmenu() {
         setSubMenuMobile(!subMenuMobile);
         const submenu = document.querySelector(".submenu");
         subMenuMobile ? submenu.style.display = "block" : submenu.style.display = "none";
@@ -29,9 +29,9 @@ const Header = () => {
                     </Col>
 
                     <Col xs="2" className="d-block d-lg-none">
-                        <a href="#" onClick={exibicaoMenu}>
+                        <span  onClick={exibicaoMenu}>
                             <FaBars size={35} color="#333" />
-                        </a>
+                        </span>
                     </Col>
 
                     <Col lg="7" className="d-none d-lg-block p-0 d-flex justify-content-lg-end menu-wrapper">
@@ -40,8 +40,7 @@ const Header = () => {
                                 <li className="mr-lg-5">
                                     <Link to="/">ínicio</Link>
                                 </li>
-                                <li className="mr-lg-5">
-                                    <a onClick={exibicaoSubmenu} href="#">Terapias</a>
+                                <li className="mr-lg-5 position-relative" onClick={exibicaoSubmenu}>Terapias
 
                                     <ul className="submenu mb-3 mb-xl-0">
                                         <li>
@@ -58,9 +57,22 @@ const Header = () => {
                                         </li>
                                     </ul>
                                 </li>
-                                <li className="mr-lg-5"><a href="">Formação</a></li>
-                                <li className="mr-lg-5"><a href="">Blog</a></li>
-                                <li><a href="">Contato</a></li>
+                                <li className="mr-lg-5">
+                                    <Link to="/formacao">
+                                        Formação
+                                          </Link>
+                                </li>
+                                <li className="mr-lg-5">
+                                    <Link to="/blog">
+                                        Blog
+                                          </Link>
+
+                                </li>
+                                <li>
+                                    <Link to="/contato">
+                                        Contato
+                                          </Link>
+                                </li>
                             </ul>
                         </nav>
                     </Col>
