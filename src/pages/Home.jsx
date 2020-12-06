@@ -17,7 +17,9 @@ const Home = () => {
                                 <img className="img-fluid mb-3" src={iconeTCC} alt="Terapia Cognitiva Comportamental" />
                         </Col>
 
-                        <h3 className="titulo02  text-center">Terapia Cognitiva Comportamental</h3>
+                        <Col xs="5" xl="8">
+                                <h3 className="titulo02  text-center">Terapia Cognitiva Comportamental</h3>
+                        </Col>
 
                         <p className="mb-xl-4 mb-3 text-center p-3">
                                 É a forma como cada pessoa vê, sente e pensa com relação à uma situação que causa desconforto, dor, incômodo, tristeza ou qualquer outra sensação negativa.
@@ -39,7 +41,7 @@ const Home = () => {
                                 Usa-se esse método quando é identificado que uma pessoa reage impulsivamente a determinada vivência, sem ter controle sobre o que faz ou mesmo sem compreender o próprio comportamento.
                         </p>
 
-                
+
                         <Link className="button01 mt-xl-n3 d-block" to="/terapias/terapia-dos-esquemas">Saiba Mais</Link>
                 </div>
         ];
@@ -73,7 +75,7 @@ const Home = () => {
                                                                 </li>
                                                         </ul>
 
-                                                
+
                                                         <Link className="button01 mx-lg-0 mx-auto d-block" to="/formacao">Saiba Mais</Link>
                                                 </Col>
 

@@ -1,20 +1,17 @@
 .titulo01 {
   font-size: 25px;
   color: #333;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 30px; }
+  text-transform: uppercase; }
   @media screen and (min-width: 1200px) {
     .titulo01 {
-      font-size: 45px;
-      margin-bottom: 50px; } }
+      font-size: 30px; } }
 
 .titulo02 {
   font-size: 18px;
   color: #4e4e4e; }
   @media screen and (min-width: 1200px) {
     .titulo02 {
-      font-size: 35px; } }
+      font-size: 25px; } }
 
 .button01 {
   background-color: #99cc33;
